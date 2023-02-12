@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --paleBlue: hsl(225, 100%, 94%);
+    --brightBlue: hsl(245, 75%, 52%);
+    --veryPale_blue: hsl(225, 100%, 98%);
+    --desaturated_blue: hsl(224, 23%, 55%);
+    --darkBlue: hsl(223, 47%, 23%);
+}
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background: var(--paleBlue);
+}
+
+.card_wrapper {
+    /*background: var(--veryPale_blue);*/
+    background: white;
+    margin: 2rem;
+    border-radius: 1.4rem;
+    overflow: hidden;
+}
+
+.card_wrapper .card_title {
+    text-align: center;
+    font-weight: 900;
+}
+
+.card_wrapper .card_description {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.card_plan {
+    margin: 1rem 0;
+    border-radius: 0.3rem;
+    padding: 0.6rem 0;
+    background: var(--veryPale_blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card_plan > img {
+    max-width: 3rem;
+}
+
+.card_plan > .price_panel > span {
+    display: block;
+    /*outline: 1px solid black;*/
+}
+
+.btn {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-weight: 900;
+    padding: 1rem 0;
+    color: white;
+    background: var(--brightBlue);
+    border-radius: 0.7rem;
+    box-shadow: 0 4px 16px #0000FF7F ;
+}
+
+.btn-negative {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-weight: 900;
+    padding: 1rem 0;
+    color: var(--desaturated_blue);
+}
+
+.card_content {
+    padding: 1rem;
+}
+.text-bold-7 {
+    font-weight: 700;
+}
+.text-bold-9 {
+    font-weight: 900;
+}
+.text-light {
+    color: var(--desaturated_blue);
+}
