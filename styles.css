@@ -107,11 +107,25 @@ main {
     color: var(--desaturated_blue);
 }
 
+
+#hrefChange:hover {
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: hsl(245, 67%, 61%);
+}
+
+.btn-negative:hover {
+    color: var(--darkBlue);
+}
+
 @media (min-width: 425px ) {
     .card_wrapper {
         max-width: 24rem;
         margin: 0 auto;
     }
+
     body {
         background-image: url("images/pattern-background-desktop.svg");
     }
